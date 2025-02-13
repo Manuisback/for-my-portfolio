@@ -1,0 +1,235 @@
+/* 
+
+données du prof
+- Vert : #00ffad
+- Bleu foncé : #192440 
+
+font-family: "Inter", serif;
+
+*/
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ici commence mon header */
+header {
+  background-image: url(/img/banner-bk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 70px 240px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 45px;
+}
+
+header p {
+  font-size: 16px;
+  max-width: 550px;
+  text-align: left;
+}
+
+/* ici commence mon bloc1 */
+.bloc1 {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.bloc1 h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex div {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.flex img {
+  margin-bottom: 15px;
+}
+
+.flex h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+/* ici commence mon bloc2  */
+.bloc2 {
+  display: flex;
+  align-items: center;
+  padding: 80px 150px;
+  background: #00ffad;
+  color: #ffffff;
+}
+
+.bloc2 div {
+  flex: 1;
+  padding: 20px;
+}
+
+.bloc2 h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.bloc2 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.bloc2 a {
+  display: inline-block;
+  color: #ffffff;
+  background: #192440;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ici commence mon bloc 3 */
+.bloc3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 30px 20px;
+  background: #ffffff;
+}
+
+/* ici commence mon footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #192440;
+  color: #ffffff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+footer ul li a {
+  color: #00ffad;
+  text-decoration: none;
+}
+
+/* ici commence mon responsive pour une taille maximum d'ecran de 652px */
+@media screen and (max-width: 652px) {
+  body {
+    text-align: center;
+    min-width: 100%;
+  }
+  header {
+    padding: 40px 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  header p {
+    min-width: 80%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    min-width: 650px;
+  }
+
+  nav {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloc1 {
+    width: 100%;
+    padding: 0;
+  }
+
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  .bloc2 {
+    flex-direction: column;
+  }
+
+  .bloc2 h2 {
+    min-width: none;
+    font-size: 25px;
+  }
+
+  .bloc2 p {
+    min-width: 550px;
+  }
+
+  .bloc3 {
+    gap: 30px;
+  }
+  .bloc2 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bloc3 #flex img {
+    width: 32%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+}
